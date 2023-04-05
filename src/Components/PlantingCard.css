@@ -1,0 +1,17 @@
+.planting-card {
+    padding: .5rem;
+    border: 1px solid #055647;
+}
+
+.planting-card figure {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
+
+.planting-card section {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    align-items: center;
+}

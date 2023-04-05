@@ -1,0 +1,7 @@
+.round-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #055647;
+    background-size: cover;
+}

@@ -1,0 +1,19 @@
+.news {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: end;
+    align-items: center;
+    gap: 4rem;
+    min-height: 30vh;
+}
+
+.news section {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+}
+
+.news section button {
+    margin-left: auto;
+}

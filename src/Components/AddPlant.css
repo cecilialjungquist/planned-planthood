@@ -1,0 +1,15 @@
+.add-plant {
+    max-width: 600px;
+    margin: auto;
+}
+
+.add-plant h3 {
+    margin: 1rem 0;
+}
+
+.add-plant .input__section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}

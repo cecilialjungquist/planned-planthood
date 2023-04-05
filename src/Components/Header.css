@@ -1,0 +1,9 @@
+.header--main {
+    background-color: #055647;
+    color: white;
+    text-transform: uppercase;
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}

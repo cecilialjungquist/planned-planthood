@@ -1,0 +1,25 @@
+button {
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white
+}
+
+.primary {
+    background-color: #055647;
+    letter-spacing: .5px;
+    margin: 1rem 0;
+}
+
+.delete {
+    background-color: #920c10;
+    letter-spacing: .5px;
+}
+
+.navigate {
+    background-color: #06342b;
+    letter-spacing: .5px;
+    margin: 1rem 0;
+}
