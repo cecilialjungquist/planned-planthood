@@ -1,6 +1,6 @@
 import './News.css';
 import Button from "./Button";
-import RoundImage from "./RoundImage";
+import Figure from "./Figure";
 
 function News() {
 
@@ -8,7 +8,7 @@ function News() {
 
     return (
         <section className="news">
-            <RoundImage url={url} />
+            <Figure url={url} type={'round'} />
             <section>
                 <h1>Säsong att så!</h1>
                 <p>Våren är äntligen här i kollektivet! Lorem ipsum dolor sit amet consectetur. Sit venenatis arcu nunc consectetur neque. Vel amet netus amet eu elit.</p>

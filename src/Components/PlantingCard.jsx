@@ -1,15 +1,12 @@
 import './PlantingCard.css';
 import Button from "./Button";
+import Figure from './Figure';
 
 function PlantingCard({ planting }) {
 
-    const styles = {
-        backgroundImage: `url(${planting.image})`,
-    }
-
     return (
         <article className="planting-card">
-            <figure style={styles}></figure>
+            <Figure url={planting.image} />
             <section>
                 <h4>{planting.seed}</h4>
                 <time dateTime={planting.date}>{planting.date}</time>
