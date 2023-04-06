@@ -1,24 +1,29 @@
 import './App.css';
 import Layout from './pages/Layout';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Planting from './pages/Planting';
+import Home from './pages/Home';
+import { createContext, useState } from "react";
+import { data } from './assets/plannedplanthood.js';
+
+export const PlantingsContext = createContext();
 
 function App() {
-
-  // TO DO
-  // * Fixa så att man kan ta bort planteringar
-  // * Fixa så att man kan klicka på planteringskorten och få upp "en ny sida"
+  const [allPlantings, setAllPlantings] = useState(data);
 
   return (
-
+  <PlantingsContext.Provider value={{ allPlantings, setAllPlantings }}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-            {/* <Route index element={<Home />} /> */}
-            {/* <Route path="plant" element={<Plant />} /> */}
+            {/* Home är default */}
+            <Route index element={<Home />} />
+            <Route path="planting" element={<Planting />} />
             {/* <Route path="*" element={<NoPage />} /> */}
           </Route>
         </Routes>
       </BrowserRouter>
+    </PlantingsContext.Provider >
 
   )
 }

@@ -1,7 +1,7 @@
 import './AddedPlants.css';
 import { useContext } from "react";
-import { PlantingsContext } from "../pages/Home";
 import PlantingCard from "./PlantingCard";
+import { PlantingsContext } from '../App';
 
 
 function AddedPlants() {
@@ -13,7 +13,7 @@ function AddedPlants() {
         <section className="added-plants">
             <h2>Våra planerade planteringar</h2>
             <section>
-                {elements}
+                {elements.length ? elements : <p>Inga planerade planteringar...</p>}
             </section>
         </section>
     );

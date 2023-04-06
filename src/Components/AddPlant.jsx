@@ -2,7 +2,7 @@ import Input from "./Input";
 import './AddPlant.css';
 import Button from "./Button";
 import { useContext } from "react";
-import { PlantingsContext } from "../pages/Home";
+import { PlantingsContext } from "../App";
 
 function AddPlant() {
     const { allPlantings, setAllPlantings } = useContext(PlantingsContext);
@@ -35,7 +35,7 @@ function AddPlant() {
                     <Input type={'url'} label={'URL, exempelbild'} placeholder={'https://dinbild.com'} name={'image'} action={handleChange} />
                     <Input type={'text'} label={'Planterare'} placeholder={'Emma på 4an'} name={'responsible'} action={handleChange} />
                 </section>
-                <Button type={'primary'} text={'Lägg till'} action={addPlant}/>
+                <Button type={'add'} text={'Lägg till'} action={addPlant}/>
             </form>
         </section>
     );

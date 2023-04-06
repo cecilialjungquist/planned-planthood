@@ -18,3 +18,33 @@ h2 {
   text-align: center;
   margin: 1rem;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.planting-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.planting-page article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.planting-page h1 {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: 800;
+  color: #055647;
+}
+
+.planting-page .responsible {
+  font-weight: 600;
+}
