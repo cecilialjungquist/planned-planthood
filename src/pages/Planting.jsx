@@ -8,7 +8,7 @@ function Planting() {
     const planting = location.state;
 
     return (  
-        <section className="planting-page">
+        <main className="planting-page">
             <h2>Plantering för:</h2>
             <h1>{planting.seed}</h1>
 
@@ -21,7 +21,7 @@ function Planting() {
             <Link to='/'>
                 <Button type={'navigation'} text={'Gå tillbaka'} />
             </Link>
-        </section>
+        </main>
     );
 }
 
